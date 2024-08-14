@@ -1,5 +1,5 @@
-package ciclos;
 // Números pares con DO while.
+package ciclos;
 public class ciclos4 {
     public static void main(String[] args){
         int var1 = 2;
