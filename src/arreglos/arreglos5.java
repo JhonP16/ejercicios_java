@@ -1,35 +1,27 @@
-// Generar un array de 40 número enteros aleatorios entre 10 y 900.
-// Crear un segundo arreglo con los número primos que se hallan del primer arreglo
-// Imprimir ambos arrays.
+// Crear un array con un tamaño definido por el usuario
+// Pedir al usuario tantos números como el tamaño del array creado.
+// Asignarle el doble de cada uno de esos datos recibidos
+
 package arreglos;
+import java.util.Scanner;
 public class arreglos5 {
-    public static void main(String[] args){
-        int [] array_randoms = new int[40];
-        System.out.println("NUMEROS RANDOMS: ");
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ingrese el tamaño del arreglo a crear: ");
+        int n = sc.nextInt();
+        int [] arr_int = new int[n];
+        int num;
 
-        for(int i=0; i<array_randoms.length; i++){
-            array_randoms[i] = (int) (Math.random()* (900-10+1)) +10;
-            System.out.println(array_randoms[i]);
+        for(int i = 0; i<arr_int.length; i++){
+            System.out.println("Ingrese el número de la posición "+ i);
+            num = sc.nextInt();
+            arr_int[i] = num*2;
         }
 
-        int[] array_primos =  new int[array_randoms.length];
-
-        System.out.println("NUMEROS PRIMOS DEL ARRAY RANDOM: ");
-        for (int i = 0; i < array_primos.length; i++) {
-            if (esPrimo(array_randoms[i])) {
-                System.out.println(array_randoms[i]);
-            }
+        System.out.println("Arreglo resultante: ");
+        for (int i = 0; i<arr_int.length; i++){
+            System.out.print(arr_int[i] + "|");
         }
+
     }
-
-    static boolean esPrimo(int num){
-        for(int i = 2; i<num; i++){
-            if(num%i == 0){
-                return false;
-            }
-            break;
-        }
-        return true;
-    }
-
 }
