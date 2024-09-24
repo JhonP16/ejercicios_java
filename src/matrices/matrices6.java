@@ -4,7 +4,7 @@
 // Además, sumar los números de la diagonal principal y los números de la diagonal secundaria.
 package matrices;
 import  java.util.Scanner;
-public class matrices7 {
+public class matrices6 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
 

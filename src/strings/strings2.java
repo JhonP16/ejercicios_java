@@ -1,3 +1,4 @@
+// Imprimir un string caracter por caracter. (recorrerlo)
 package strings;
 public class strings2 {
     public static void main(String[] args){
