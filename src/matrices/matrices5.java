@@ -19,7 +19,7 @@ public class matrices5 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Ingrese el número de estudiantes: ");
-        int n = sc.nextInt();
+        n = sc.nextInt();
         matriz = new int[4][n];
 
         int opcion;
